@@ -48,11 +48,11 @@ employee.name = "john";
 // kgToLbs("10kg");
 
 type Dragable = {
-    drag: (drag: Event) => {
-        e.dataTransfer.setData
-    };
+  drag: (drag?: Event) => {};
 };
 
 type Resizable = {
   resize: () => void;
 };
+
+type UIDrag = Dragable & Resizable;
