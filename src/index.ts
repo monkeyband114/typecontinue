@@ -22,18 +22,37 @@
 
 // calculateTax(10_000, 2022);
 
-// type Employee = {
-//   readonly id: number;
-//   name: string;
-//   retire: (date: Date) => void;
-// };
+type Employee = {
+  readonly id: number;
+  name: string;
+  retire: (date: Date) => void;
+};
 
-// let employee: Employee = {
-//   id: 1,
-//   name: "",
-//   retire: (date: Date) => {
-//     return date;
-//   },
-// };
+let employee: Employee = {
+  id: 1,
+  name: "",
+  retire: (date: Date) => {
+    return date;
+  },
+};
 
-// employee.name = "john";
+employee.name = "john";
+
+// function kgToLbs(weight: number | string): number {
+//   //   narrpwing
+//   if (typeof weight === "number") return weight * 2.2;
+//   else return parseInt(weight) * 2.2;
+// }
+
+// console.log(kgToLbs(10));
+// kgToLbs("10kg");
+
+type Dragable = {
+    drag: (drag: Event) => {
+        e.dataTransfer.setData
+    };
+};
+
+type Resizable = {
+  resize: () => void;
+};
