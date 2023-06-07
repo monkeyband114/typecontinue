@@ -22,21 +22,21 @@
 
 // calculateTax(10_000, 2022);
 
-type Employee = {
-  readonly id: number;
-  name: string;
-  retire: (date: Date) => void;
-};
+// type Employee = {
+//   readonly id: number;
+//   name: string;
+//   retire: (date: Date) => void;
+// };
 
-let employee: Employee = {
-  id: 1,
-  name: "",
-  retire: (date: Date) => {
-    return date;
-  },
-};
+// let employee: Employee = {
+//   id: 1,
+//   name: "",
+//   retire: (date: Date) => {
+//     return date;
+//   },
+// };
 
-employee.name = "john";
+// employee.name = "john";
 
 // function kgToLbs(weight: number | string): number {
 //   //   narrpwing
@@ -46,17 +46,3 @@ employee.name = "john";
 
 // console.log(kgToLbs(10));
 // kgToLbs("10kg");
-
-type Dragable = {
-  drag: (drag?: Event) => {};
-};
-
-type Resizable = {
-  resize: () => void;
-};
-
-type UIDrag = Dragable & Resizable;
-
-function greet(name: string) {
-  return name;
-}
