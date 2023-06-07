@@ -1,10 +1,13 @@
 "use strict";
-function kgToLbs(weight) {
-    if (typeof weight === "number")
-        return weight * 2.2;
-    else
-        return parseInt(weight) * 2.2;
+let employee = {
+    id: 1,
+    name: "",
+    retire: (date) => {
+        return date;
+    },
+};
+employee.name = "john";
+function greet(name) {
+    return name;
 }
-console.log(kgToLbs(10));
-kgToLbs("10kg");
 //# sourceMappingURL=index.js.map
