@@ -56,3 +56,7 @@ type Resizable = {
 };
 
 type UIDrag = Dragable & Resizable;
+
+function greet(name: string) {
+  return name;
+}
