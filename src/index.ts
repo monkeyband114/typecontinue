@@ -53,9 +53,19 @@
 
 // type Metric = "cm" | "inch";
 
-function greet(name: string | null | undefined) {
-  if (name) console.log(name.toUpperCase());
-  else console.log("Dora");
+// function greet(name: string | null | undefined) {
+//   if (name) console.log(name.toUpperCase());
+//   else console.log("Dora");
+// }
+
+// greet(null);
+
+type Customer = {
+  birthday: Date;
+};
+
+function getCustomer(id: number): Customer | null {
+  return id === 0 ? null : { birthday: new Date() };
 }
 
-greet(null);
+let customer = getCustomer(0);
