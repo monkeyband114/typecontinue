@@ -46,3 +46,7 @@
 
 // console.log(kgToLbs(10));
 // kgToLbs("10kg");
+
+type Quantity = 50 | 100;
+
+let quantity: Quantity = 100;
