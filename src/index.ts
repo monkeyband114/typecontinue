@@ -69,3 +69,5 @@ function getCustomer(id: number): Customer | null {
 }
 
 let customer = getCustomer(0);
+
+console.log(customer?.birthday);
