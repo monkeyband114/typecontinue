@@ -53,8 +53,9 @@
 
 // type Metric = "cm" | "inch";
 
-function greet(name: string) {
-  console.log(name.toUpperCase());
+function greet(name: string | null | undefined) {
+  if (name) console.log(name.toUpperCase());
+  else console.log("Dora");
 }
 
 greet(null);
