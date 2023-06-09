@@ -1,3 +1,6 @@
 "use strict";
-let quantity = 100;
+function getCustomer(id) {
+    return id === 0 ? null : { birthday: new Date() };
+}
+let customer = getCustomer(0);
 //# sourceMappingURL=index.js.map
